@@ -440,6 +440,28 @@ span{
     .portfolio{
         padding-bottom: 7rem;
     }
+    .about,.contactSkills{
+        flex-direction: column;
+    }
+    .about .about-img .aboutHero{
+        width: 100%;
+    }
+    .proposal img{
+        width: 52vw;
+    }
+    .portfolio-box{
+        flex-direction: column-reverse;
+    }
+    .portfolio-img img{
+        width: 100%;
+        height: 100%;
+    }
+    .portfolio-gallery{
+        grid-template-columns: repeat(auto-fill,minmax(250px , 1fr));
+    }
+    .img-hero{
+        margin-top: 3rem;
+    }
     .contact {
         min-height: auto;
     }
@@ -472,33 +494,56 @@ span{
         margin: 3rem 0;
     }
     .home{
-        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        flex-direction: column-reverse;
     }
     .home-content h3 {
-        font-size: 2.6rem;
+        font-size: 2.8rem;
     }
     .home-content h1 {
         font-size: 5rem;
     }
+    .home .hiring {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem; /* Adds space between the buttons */
+        margin-top: 2rem; /* Adds space above the buttons */
+    }
+    .home .social-media a {
+        width: 6rem; /* Adjust width as needed */
+        height: 6rem; /* Adjust height as needed */
+        font-size: 3rem; /* Adjust font size as needed */
+    }
+
+    .home .hiring .btn {
+        width: auto; /* Ensure buttons do not take full width */
+    }
     .home-img img {
-        width: 40vw;
+        width: 400px;
+        height: 400px;
         margin-top: 4rem;
     }
-    .about {
-        flex-direction: column-reverse;
+    .about-content{
+        align-items: center;
+        text-align: center;
     }
     .about img {
         width: 40vw;
         margin-top: 0rem;
     }
-    .services h2{
-        margin-bottom: 3rem;
-    } 
+    
     .portfolio h2{
         margin-bottom: 3rem;
     }
     .portfolio-container {
         grid-template-columns: repeat(2, 1fr);
+    }
+    .fillter-buttons button{
+        padding: 10px;
+        font-size: 1.5rem;
+        font-weight: 600;
     }
 }
 
@@ -512,15 +557,65 @@ span{
     html{
         font-size: 50%;
     }
+    .home{
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    .home-img img{
+        width: 300px;
+        height: 300px;
+    }
+    .home-content{
+        text-align: center;
+    }
+    .fillter-buttons{
+        display: grid;
+        grid-gap: 1rem;
+    }
+    .fillter-buttons button{
+        width: 100%;
+        padding: 10px;
+    }
     .contact form .input-box input {
         width: 100%;
+    }
+    .footer{
+        flex-direction: column-reverse;
+    }
+    .footer p{
+        text-align: center;
+        margin-top: 2rem;
     }
 }
 
 @media (max-width: 365px){
+    .home{
+        align-items: center;
+        flex-direction: column-reverse;
+    }
     .home-img img{
-        width: 60vw;
-        height: 60vw;
+        width: 200px;
+        height: 200px;
+    }
+    .about .about-btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about .about-btn button {
+        width: 50%;
+        margin-bottom: 0.5rem; /* Adds space between the buttons */
+        padding: 0.9rem 1rem; /* Adjust padding as needed */
+        font-size: 1rem; /* Adjust font size as needed */
+    }
+    .fillter-buttons{
+        display: grid;
+        grid-gap: 1rem;
+    }
+    .fillter-buttons button{
+        width: 100%;
+        padding: 13px;
     }
     .about-img img{
         width: 60vw;
