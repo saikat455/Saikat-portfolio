@@ -137,7 +137,6 @@ span{
     padding: 1rem 2.8rem;
     background: var(--main-color);
     border-radius: 5px;
-    /* box-shadow: 0 0 1rem var(--main-color); */
     font-size: 1.6rem;
     color: white;
     letter-spacing: .1rem;
@@ -153,7 +152,7 @@ span{
     gap: 20px;
 }
 
-/* ==================== About section css code ============================ */
+/*About section*/
 .about{
     display: flex;
     justify-content: space-between;
@@ -163,15 +162,14 @@ span{
 
 .about .about-img{
     position: relative;
-    display: flex; /* Add */
-    align-items: center; /* Add */
+    display: flex; 
+    align-items: center; 
     justify-content: center;
 }
 
 .about .about-img .aboutHero{
-    height: 70%; /* Change to 100% */
+    height: 70%; 
     width: 25vw; 
-    /* max-width: 30vw;  */
     border-radius: 10%;
     animation: floatImage 4s ease-in-out infinite;
 }
@@ -255,7 +253,7 @@ span{
 
 
 
-/* ==================== Services section css code ============================ */
+/* Services section */
 .portfolio{
     background: var(--second-bg-color);
 }
@@ -507,17 +505,17 @@ span{
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 1rem; /* Adds space between the buttons */
-        margin-top: 2rem; /* Adds space above the buttons */
+        gap: 1rem; 
+        margin-top: 2rem; 
     }
     .home .social-media a {
-        width: 6rem; /* Adjust width as needed */
-        height: 6rem; /* Adjust height as needed */
-        font-size: 3rem; /* Adjust font size as needed */
+        width: 6rem; 
+        height: 6rem; 
+        font-size: 3rem; 
     }
 
     .home .hiring .btn {
-        width: auto; /* Ensure buttons do not take full width */
+        width: auto; 
     }
     .home-img img {
         width: 400px;
@@ -604,9 +602,9 @@ span{
 
     .about .about-btn button {
         width: 50%;
-        margin-bottom: 0.5rem; /* Adds space between the buttons */
-        padding: 0.9rem 1rem; /* Adjust padding as needed */
-        font-size: 1rem; /* Adjust font size as needed */
+        margin-bottom: 0.5rem; 
+        padding: 0.9rem 1rem; 
+        font-size: 1rem; 
     }
     .fillter-buttons{
         display: grid;
