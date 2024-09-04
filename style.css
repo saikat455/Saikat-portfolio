@@ -417,10 +417,33 @@ span{
     font-size: 2.4rem;
     color: var(--second-bg-color);
 }
+.btn-download {
+    margin-left: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration:underline;
+    color: #ffffff;
+}
+
+.btn-download:hover {
+    
+    color: #ffffff;
+}
+
+.btn-download:focus {
+    outline: none;
+    
+}
 
 @media (max-width: 1200px){
     html{
         font-size: 55%;
+    }
+    .btn-download {
+        font-size: 15px;
+        padding: 10px 22px;
     }
 }
 
@@ -458,6 +481,10 @@ span{
     }
     .img-hero{
         margin-top: 3rem;
+    }
+    .btn-download {
+        font-size: 14px;
+        padding: 8px 18px;
     }
     .contact {
         min-height: auto;
@@ -542,11 +569,19 @@ span{
         font-size: 1.5rem;
         font-weight: 600;
     }
+    .btn-download {
+        font-size: 13px;
+        padding: 7px 16px;
+    }
 }
 
 @media (max-width: 617px){
     .portfolio-container{
         grid-template-columns: 1fr;
+    }
+    .btn-download {
+        font-size: 12px;
+        padding: 6px 14px;
     }
 }
 
@@ -572,6 +607,10 @@ span{
     .fillter-buttons button{
         width: 100%;
         padding: 10px;
+    }
+    .btn-download {
+        font-size: 11px;
+        padding: 5px 12px;
     }
     .contact form .input-box input {
         width: 100%;
@@ -617,6 +656,10 @@ span{
      .about-img img{
         width: 100px;
         height: 100px;
+    }
+    .btn-download {
+        font-size: 10px;
+        padding: 4px 10px;
     }
     .footer{
         flex-direction: column-reverse;
